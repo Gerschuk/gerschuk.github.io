@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap');
+
+:root {
+    --body-background: rgb(0, 0, 0);
+    --header-background1: rgb(44, 11, 88);
+    --header-background2: rgb(154, 70, 42);
+    --primary-font: 'Roboto', sans-serif;
+    --title-font: 'Poiret One', cursive;
+    --primary-font-size: 14px;
+    --desktop-font-size: 16px;
+    --background-section-color: rgb(0, 116, 193);
+    /* --action-color: rgb(255, 85, 13); */
+    --action-color: #FFCC0D;
+    /* --action-color-hover: rgb(244, 124, 73); */
+    --action-color-hover: #B39112;
+    --border-radius-action-btn: 5px;
+}
+
+/* Reset */
+
+html {
+    font-size: var(--primary-font-size);
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: var(--body-background);
+    color: white;
+}
+
+body>div>div>header {
+    background-image: linear-gradient(to right,
+            var(--header-background1) 15%,
+            var(--header-background2));
+}
+
+.nav-link {
+    color: white;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title-font);
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    max-width: 79ch;
+    margin-bottom: .8rem !important;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+.navbar-brand>img {
+    width: 2rem;
+}
+
+.bg-section {
+    background-color: var(--background-section-color);
+}
+
+.bottom-2 {
+    bottom: 2%;
+}
+
+.end-2 {
+    right: 2%;
+}
+
+.vh-80 {
+    height: 80vh;
+}
+
+.h-82 {
+    height: 82%;
+}
+
+.top-3 {
+    top: 3.7%;
+}
+
+.start-25 {
+    left: calc(100% / 4);
+}
+
+/* Personal data */
+.personal-data {
+    height: calc(100vh - 3%);
+}
+
+.background-personal-data {
+    background-image: url(../img/html-css-js-react-angular-vue-gulp.png);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: calc(100% - 54% + 5%);
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.personal-data-container {
+    position: relative;
+    bottom: 15%;
+    height: 58%;
+    background-color: var(--background-section-color);
+}
+
+.profile-img {
+    bottom: 94%;
+    width: 7rem;
+}
+
+.modal {
+    color: black;
+}
+
+.modal img, picture {
+    width: 100% !important;
+    display: block;
+}
+.certification-list {
+    width: 70%;
+    min-height: 40px;
+}
+
+.fa-circle-info {
+    font-size: 1.8rem;
+    color: var(--action-color);
+}
+
+.social-icons img {
+    width: calc(40vh * 0.1);
+    border-radius: 50%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.fa-circle-chevron-right {
+    font-size: 1.5rem;
+    color: var(--action-color);
+}
+
+/* Contact form */
+div.background-blur {
+    background-image: url(../img/contact-form-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+form>label,
+form>input,
+form>small {
+    width: 100%;
+    height: 2rem;
+    color: black;
+}
+
+form>* {
+    border: none;
+}
+
+form>input,
+form>textarea {
+    background-color: rgba(199, 198, 198, 0.8);
+    border-radius: var(--border-radius-action-btn);
+}
+
+form>input:focus,
+form>input:focus {
+    outline: 2px solid var(--action-color-hover);
+}
+
+textarea {
+    width: 100%;
+    height: 30vh;
+}
+
+form>input[type="submit"] {
+    background-color: var(--action-color);
+    color: black;
+    letter-spacing: .1rem;
+}
+
+/* Button fixed to go up */
+.fa-caret-up {
+    font-size: 3rem;
+    color: var(--action-color);
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+.desktop-hidden {
+    display: initial;
+}
+
+/* Media Queries */
+@media screen and (min-width:993px) {
+
+    /* Header section */
+    body>div[class="row w-100 m-0"]>div#first-section[class="col-lg-4 p-0 vh-100 mb-3"] {
+        position: fixed !important;
+    }
+
+    /* Main */
+    body>div[class="row w-100 m-0"]>main#main-content[class="col-lg-8 my-0"] {
+        margin-top: -2% !important;
+    }
+
+    body>div[class="row w-100 m-0"]>main#main-content[class="col-lg-8 my-0"],
+    footer[class="col-lg-8 mt-1"] {
+        margin-left: calc(100% / 3) !important;
+    }
+
+    div.background-blur {
+        background-image: url(../img/contact-form-background-2.jpg);
+    }
+
+    /* Contact section */
+    section#contact {
+        height: 100vh;
+    }
+
+    /* contact form */
+    div[class="position-absolute top-3 p-3"] {
+        width: 50%;
+        left: calc(100% / 4);
+        top: calc(100% / 10) !important;
+    }
+
+    /* ---------- hovers --------- */
+    .social-icons>li:hover,
+    .fa-circle-info:hover,
+    .fa-caret-up:hover,
+    .fa-circle-chevron-right:hover {
+        transform: scale(1.5);
+    }
+
+    form>label,
+    form>input,
+    form>small {
+        color: white;
+    }
+
+    form>input[type="submit"]:hover {
+        background-color: var(--action-color-hover);
+    }
+
+    .fa-circle-info:hover,
+    .fa-caret-up:hover,
+    .fa-circle-chevron-right:hover,
+    .nav-link:hover {
+        color: var(--action-color-hover);
+    }
+}

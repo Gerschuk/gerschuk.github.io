@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP8 CSS - Academia Numen</title>
+    <meta name="description"
+        content="Project for Academia Numen - Curriculum Vitae made with HTML5, CSS, Bootstrap - Mobile First">
+    <link rel="icon" type="image/png" href="./assets/img/icon.png">
+    <link rel="apple-touch-icon" href="./assets/img/apple-icon.png">
+
+    <!-- Opengraph -->
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Curriculum Vitae of -person name here-">
+    <meta property="og:description" content="Project for Argentina Programa 4.0 Full stack course">
+    <meta property="og:image" content="insert absolute url image">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="Insert domain name">
+    <meta property="twitter:url" content="#">
+    <meta name="twitter:title" content="Curriculum Vitae of -person name here-">
+    <meta name="twitter:description" content="Project for Argentina Programa 4.0 Full stack course">
+    <meta name="twitter:image" content="insert absolute url image">
+
+    <!-- Author & Copyright -->
+    <meta name="author" content="Gabriel Nicolás Simchuk Gerasimchuk (@Gerschuk.dev)">
+    <meta name="copyright" content="Attribution-NonCommercial-ShareAlike 4.0 International">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body class="container-fluid p-0 ">
+
+    <!-- For make it in two parts in xxl -->
+    <div class="row w-100 m-0">
+
+        <!-- Header and presentation section -->
+        <div id="first-section" class="col-lg-4 p-0 vh-100 mb-3">
+            <header class="container-fluid px-2 shadow">
+                <nav class="navbar px-1">
+                    <a href="https://www.github.com/gerschuk" target="_blank" rel="noopener noreferrer"
+                        class="navbar-brand">
+                        <img src="./assets/img/logo/github-logo.svg" alt="My Github Profile">
+                    </a>
+                    <ul class="navbar-nav ms-auto d-flex flex-row">
+                        <li class="nav-item btn btn-link"><a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item btn btn-link"><a href="#contact" class="nav-link">Work with
+                                me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="personal-data position-relative">
+                <div class="background-personal-data"></div>
+                <div
+                    class="personal-data-container d-flex flex-column align-items-center justify-content-evenly px-4 pt-5 pb-3 rounded-top-5 text-center">
+                    <img class="profile-img position-absolute rounded-circle" src="./assets/img/photo-cv.jpg"
+                        alt="Juana Perez Photo">
+                    <div class="container-fluid my-0">
+                        <h1>Marquitos Messi</h1>
+                        <h2>Full Stack Developer</h2>
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta cum
+                        iste
+                        atque tenetur dolore
+                        nostrum expedita labore excepturi totam.</p>
+
+                    <div class="container-fluid d-flex flex-column justify-content-evenly align-items-center">
+                        <h3>Certifications</h3>
+                        <ul class="d-flex justify-content-between certification-list pt-1 mb-0">
+                            <li class="d-flex flex-column align-items-center">
+                                <button data-bs-toggle="modal" data-bs-target="#certificate-1">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </button>2023
+                            </li>
+                            <li class="d-flex flex-column align-items-center">
+                                <button data-bs-toggle="modal" data-bs-target="#certificate-2">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </button>2023
+                            </li>
+                            <li class="d-flex flex-column align-items-center">
+                                <button data-bs-toggle="modal" data-bs-target="#certificate-3">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </button>2022
+                            <li class="d-flex flex-column align-items-center">
+                                <button data-bs-toggle="modal" data-bs-target="#certificate-4">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </button>2022
+                            </li>
+                        </ul>
+                        <small>Tap the information points to see the certificates</small>
+                    </div>
+                    <div class="container-fluid pt-2 pb-4 position-relative bottom-0">
+                        <ul class="social-icons d-flex justify-content-center">
+                            <li class="px-2"><a href="mailto:user@gmail.com" target="_blank"
+                                    rel="nofollow noreferrer noopener"><img src="./assets/img/contact-icons/gmail.png"
+                                        alt="Gmail logo"></a></li>
+                            <!-- Completar href, target y rel -->
+                            <li class="px-2"><a href="#" target="_blank" rel="nofollow noreferrer noopener"><img
+                                        src="./assets/img/contact-icons/telegram.png" alt="Telegram logo"></a></li>
+                            <li class="px-2"><a href="#" target="_blank" rel="nofollow noreferrer noopener"><img
+                                        src="./assets/img/contact-icons/instagram.png" alt="Instagram logo"></a>
+                            </li>
+                            <li class="px-2"><a href="#" target="_blank" rel="nofollow noreferrer noopener"><img
+                                        src="./assets/img/contact-icons/pinterest.png" alt="Pinterest logo"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Main Content -->
+        <main id="main-content" class="col-lg-8 my-0">
+            <div class="certifications">
+                <article class="modal fade" id="certificate-1" tabindex="-1" aria-labelledby="first-certificate"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header class="modal-header">
+                                <h2 class="modal-title fs-5" id="first-certificate">Google</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </header>
+                            <div class="modal-body d-flex flex-column align-items-center">
+                                <h4>Build Wireframes and low fidelity prototypes</h4>
+                                <picture>
+                                    <source class="picture" media="(max-width: 600px)"
+                                        srcset="/assets/img/certificate.jpg">
+                                    <source class="picture" media="(min-width: 601px)"
+                                        srcset="/assets/img/certificate.jpg">
+                                    <img src="./assets/img/contact-form-background-2.jpg" alt="#">
+                                </picture>
+                                <a class="btn-link text-center" href="#" target="_blank"
+                                    rel="noopener noreferrer nofollow">Verification link</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="modal fade" id="certificate-2" tabindex="-1" aria-labelledby="second-certificate"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header class="modal-header">
+                                <h2 class="modal-title fs-5" id="second-certificate">Microsoft</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </header>
+                            <div class="modal-body d-flex flex-column align-items-center">
+                                <h4>Build Wireframes and low fidelity prototypes</h4>
+                                <picture>
+                                    <source media="(max-width: 600px)" srcset="/assets/img/certificate.jpg"
+                                        class="picture">
+                                    <source media="(min-width: 601px)" srcset="/assets/img/certificate.jpg"
+                                        class="picture">
+                                    <img src="./assets/img/contact-form-background-2.jpg" alt="#">
+                                </picture>
+                                <a class="btn-link text-center" href="#" target="_blank"
+                                    rel="noopener noreferrer nofollow">Verification link</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="modal fade" id="certificate-3" tabindex="-1" aria-labelledby="third-certificate"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header class="modal-header">
+                                <h2 class="modal-title fs-5" id="third-certificate">JS</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </header>
+                            <div class="modal-body d-flex flex-column align-items-center">
+                                <h4>Build Wireframes and low fidelity prototypes</h4>
+                                <picture>
+                                    <source media="(max-width: 600px)" srcset="/assets/img/certificate.jpg"
+                                        class="picture">
+                                    <source media="(min-width: 601px)" srcset="/assets/img/certificate.jpg"
+                                        class="picture">
+                                    <img src="./assets/img/contact-form-background-2.jpg" alt="#">
+                                </picture>
+                                <a class="btn-link text-center" href="#" target="_blank"
+                                    rel="noopener noreferrer nofollow">Verification link</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="modal fade" id="certificate-4" tabindex="-1" aria-labelledby="four-certificate"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header class="modal-header">
+                                <h2 class="modal-title fs-5" id="four-certificate">Amazon web services</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </header>
+                            <div class="modal-body d-flex flex-column align-items-center">
+                                <h4>Build Wireframes and low fidelity prototypes</h4>
+                                <picture>
+                                    <source media="(max-width: 600px)" srcset="/assets/img/certificate.jpg"
+                                        class="picture">
+                                    <source media="(min-width: 601px)" srcset="/assets/img/certificate.jpg"
+                                        class="picture">
+                                    <img src="./assets/img/contact-form-background-2.jpg" alt="#">
+                                </picture>
+                                <a class="btn-link text-center" href="#" target="_blank"
+                                    rel="noopener noreferrer nofollow">Verification link</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="container-fluid my-5 position-relative">
+                <div class="row d-flex flex-row justify-content-center">
+                    <h2 class="text-center mb-0 pb-0">Projects</h2>
+                    <article class="col-lg-3 text-center bg-section px-0 rounded-top-4 mx-2 my-4">
+                        <header>
+                            <div class="container-fluid px-0">
+                                <img class="img-fluid rounded-top-4" src="./assets/img/portfolio/project1.jpg"
+                                    alt="alt-text">
+                            </div>
+                            <h3 class="pt-3">Project#</h3>
+                        </header>
+                        <div class="px-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla dolores quis alias
+                                iusto non
+                                magni aliquam suscipit minima amet.</p>
+                        </div>
+                        <footer class="pb-3">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </footer>
+                    </article>
+
+                    <article class="col-lg-3 text-center bg-section px-0 rounded-top-4 mx-2 my-4">
+                        <header>
+                            <div class="container-fluid px-0">
+                                <img class="img-fluid rounded-top-4" src="./assets/img/portfolio/project2.jpg"
+                                    alt="alt-text">
+                            </div>
+                            <h3 class="pt-3">Project#</h3>
+                        </header>
+                        <div class="px-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla dolores quis alias
+                                iusto non
+                                magni aliquam suscipit minima amet.</p>
+                        </div>
+                        <footer class="pb-3">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </footer>
+                    </article>
+
+                    <article class="col-lg-3 text-center bg-section px-0 rounded-top-4 mx-2 my-4">
+                        <header>
+                            <div class="container-fluid px-0">
+                                <img class="img-fluid rounded-top-4" src="./assets/img/portfolio/project3.jpg"
+                                    alt="alt-text">
+                            </div>
+                            <h3 class="pt-3">Project#</h3>
+                        </header>
+                        <div class="px-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla dolores quis alias
+                                iusto non
+                                magni aliquam suscipit minima amet.</p>
+                        </div>
+                        <footer class="pb-3">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </footer>
+                    </article>
+
+                    <div class="row d-flex flex-row justify-content-center p-0">
+                        <article class="col-lg-3 text-center bg-section px-0 rounded-top-4 mx-2 my-4">
+                            <header>
+                                <div class="container-fluid px-0">
+                                    <img class="img-fluid rounded-top-4" src="./assets/img/portfolio/project4.jpg"
+                                        alt="alt-text">
+                                </div>
+                                <h3 class="pt-3">Project#</h3>
+                            </header>
+                            <div class="px-3">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla dolores quis
+                                    alias
+                                    iusto non
+                                    magni aliquam suscipit minima amet.</p>
+                            </div>
+                            <footer class="pb-3">
+                                <i class="fa-solid fa-circle-chevron-right"></i>
+                            </footer>
+                        </article>
+
+                        <article class="col-lg-3 text-center bg-section px-0 rounded-top-4 mx-2 my-4">
+                            <header>
+                                <div class="container-fluid px-0">
+                                    <img class="img-fluid rounded-top-4" src="./assets/img/portfolio/project5.jpg"
+                                        alt="alt-text">
+                                </div>
+                                <h3 class="pt-3">Project#</h3>
+                            </header>
+                            <div class="px-3">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla dolores quis
+                                    alias
+                                    iusto non
+                                    magni aliquam suscipit minima amet.</p>
+                            </div>
+                            <footer class="pb-3">
+                                <i class="fa-solid fa-circle-chevron-right"></i>
+                            </footer>
+                        </article>
+
+                        <article class="col-lg-3 text-center bg-section px-0 rounded-top-4 mx-2 my-4">
+                            <header>
+                                <div class="container-fluid px-0">
+                                    <img class="img-fluid rounded-top-4" src="./assets/img/portfolio/project6.jpg"
+                                        alt="alt-text">
+                                </div>
+                                <h3 class="pt-3">Project#</h3>
+                            </header>
+                            <div class="px-3">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla dolores quis
+                                    alias
+                                    iusto non
+                                    magni aliquam suscipit minima amet.</p>
+                            </div>
+                            <footer class="pb-3">
+                                <i class="fa-solid fa-circle-chevron-right"></i>
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section id="contact" class="row vh-80 my-0 pt-0">
+                <div class="container-fluid position-relative p-0">
+                    <h2 class="text-center">Work with me</h2>
+                    <div class="background-blur w-100 h-100"></div>
+                    <div class="position-absolute top-3 p-3">
+                        <form id="contact-form" action="index.html" method="get">
+                            <label class="mt-4" for="name">Name:</label>
+                            <input class="py-1" type="text" id="name" name="name" pattern="[A-Za-z]+\s?"
+                                title="Please write only letters and spaces" required>
+                            <small>Numbers aren't allowed</small>
+                            <label class="mt-4" for="email">Email:</label>
+                            <input type="email" id="email" name="email" title="Must be a valid email address" required>
+                            <small>Example: myEmail@gmail.com</small>
+                            <label class="mt-4" for="form-message">Message:</label>
+                            <textarea name="message" id="form-message" cols="30" rows="10" required></textarea>
+                            <input type="submit" value="Send message">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="col-lg-8 mt-1">
+            <div class="container-fluid">
+                <div class="d-flex flex-column justify-content-center align-items-center h-50 py-3 mt-4">
+                    <small>The images are onlt ilustratives</small>
+
+                    <!-- Licence creative common image -->
+                    <a rel="license nofollow noreferrer noopener" target="_blank"
+                        href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <img alt="Licencia de Creative Commons" style="border-width:0"
+                            src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a>
+
+                    <a class="btn btn-link text-secondary text-start" href="https://www.linkedin.com/in/gerschuk/"
+                        target="_blank" rel="noopener nofollow noreferrer">©
+                        Designed
+                        and coded by Gerschuk.dev</a>
+                </div>
+
+                <!-- Fixed button to top -->
+                <div class="position-fixed bottom-2 end-2">
+                    <a href="#top" class="desktop-hidden"><i class="fa-solid fa-caret-up"></i></a>
+                    <a href="#portfolio" class="mobile-hidden"><i class="fa-solid fa-caret-up"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/22836092e6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
